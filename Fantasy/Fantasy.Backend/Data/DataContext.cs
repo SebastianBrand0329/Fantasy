@@ -10,6 +10,9 @@ public class DataContext : DbContext
 	}
 
 	public DbSet<Country> Countries { get; set; }
+	public DbSet<ListaNegraWeb> Placas { get; set; }
+	public DbSet<ListaNegraWebV1> PlacasPrueba { get; set; }
+	public DbSet<ListaNegraWebV2> PlacasPruebas { get; set; }
 
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{
